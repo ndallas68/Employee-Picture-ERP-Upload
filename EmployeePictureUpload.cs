@@ -15,7 +15,7 @@ namespace EmployeePictureUpload
         }
         public void GetImages()
         {
-            string dir = @"\\sty-fs-1\Employee_Photos\";
+            string dir = @"**_File_Directory_**";
             string[] imageTypes = { ".jpeg", ".jpg", ".png" };
             var files = Directory.EnumerateFiles(dir, "*.*", SearchOption.TopDirectoryOnly)
                 .Where(s => imageTypes.Any(ext => s.EndsWith(ext, StringComparison.OrdinalIgnoreCase)));
